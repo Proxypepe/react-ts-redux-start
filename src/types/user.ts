@@ -1,20 +1,20 @@
-export enum UserActions {
+export enum UserActionTypes {
     FETCH_USERS = "FETCH_USERS",
     FETCH_USERS_SUCCESS = "FETCH_USERS_SUCCESS",
     FETCH_USERS_ERROR = "FETCH_USERS_ERROR",
 }
 
 interface FetchUserAction {
-    type: UserActions.FETCH_USERS;
+    type: UserActionTypes.FETCH_USERS;
 }
 
 interface FetchUserSuccessAction {
-    type: UserActions.FETCH_USERS_SUCCESS;
+    type: UserActionTypes.FETCH_USERS_SUCCESS;
     payload: any[];
 }
 
 interface FetchUserErrorAction {
-    type: UserActions.FETCH_USERS_ERROR;
+    type: UserActionTypes.FETCH_USERS_ERROR;
     payload: string;
 }
 
